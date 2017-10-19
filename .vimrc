@@ -18,6 +18,9 @@ set smartindent
 set smarttab	
 set softtabstop=2
 
+set mouse=a
+set scrolloff=7
+
 autocmd Filetype python map <F9> :w <CR> :!python ./% <CR>
 autocmd Filetype cpp map <F9> :w <CR> :!g++ -std=c++14 -g -Wall % -o %< && ./%< <CR>
 autocmd Filetype c map <F9> :w <CR> :!gcc -std=c99 -g -Wall % -o %< && ./%< <CR>
